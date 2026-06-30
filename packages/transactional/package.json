@@ -1,0 +1,30 @@
+{
+  "name": "@repo/transactional",
+  "version": "0.0.0",
+  "private": true,
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": "./emails/index.ts",
+    "./emails/templates/*": "./emails/templates/*.tsx",
+    "./emails/components/*": "./emails/components/*.tsx",
+    "./lib/*": "./lib/*.ts"
+  },
+  "scripts": {
+    "dev": "email dev"
+  },
+  "devDependencies": {
+    "@react-email/preview-server": "5.2.5",
+    "@types/react": "19.2.2",
+    "@types/react-dom": "19.2.2",
+    "react-email": "5.2.5",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@react-email/components": "1.0.6",
+    "react": "19.2.3",
+    "react-dom": "19.2.3"
+  }
+}

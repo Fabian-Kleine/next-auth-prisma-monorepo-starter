@@ -1,0 +1,24 @@
+{
+  "name": "next-auth-starter",
+  "private": true,
+  "scripts": {
+    "build": "turbo run build",
+    "build:web": "turbo run build --filter=web",
+    "dev": "turbo run dev",
+    "dev:web": "turbo run dev --filter=web",
+    "lint": "turbo run lint",
+    "check-types": "turbo run check-types",
+    "db:generate": "pnpm --filter @repo/db run prisma:generate",
+    "db:push": "pnpm --filter @repo/db run prisma:db-push",
+    "db:migrate": "pnpm --filter @repo/db run prisma:migrate",
+    "db:studio": "pnpm --filter @repo/db run prisma:studio",
+    "db:seed": "pnpm --filter @repo/db run db:seed",
+    "db:docker:up": "pnpm --filter @repo/db run docker:up",
+    "db:docker:down": "pnpm --filter @repo/db run docker:down"
+  },
+  "devDependencies": {
+    "turbo": "^2.9.14",
+    "typescript": "^5.9.3"
+  },
+  "packageManager": "pnpm@11.1.1"
+}

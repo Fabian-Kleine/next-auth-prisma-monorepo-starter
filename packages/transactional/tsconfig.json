@@ -1,0 +1,9 @@
+{
+  "extends": "../typescript-config/react-library.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "rootDir": "."
+  },
+  "include": ["emails/**/*.ts", "emails/**/*.tsx", "lib/**/*.ts"],
+  "exclude": ["node_modules", "dist"]
+}
